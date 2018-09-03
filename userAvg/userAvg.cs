@@ -39,8 +39,9 @@ namespace UserAverage
 
             // Complete Calculations
             int sum, avg, small, large;
-            sum = values[0] + values[1] + values[2];
-            avg = sum / 3;
+
+            sum = values.Sum();
+            avg = (int)values.Average();
             small = values.Min();
             large = values.Max();
 
