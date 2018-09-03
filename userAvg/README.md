@@ -1,1 +1,1 @@
-![Averages].(/userAvg/userAvg.jpg)
+![Averages](/userAvg/userAvg.jpg)
