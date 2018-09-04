@@ -1,1 +1,1 @@
-![fiveDigit](fiveDigit/fiveDigit.jpg)
+![fiveDigit](/fiveDigit/fiveDigit.jpg)
