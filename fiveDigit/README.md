@@ -1,5 +1,7 @@
 ## Program 3 - Five Digit Number
 
+### Brice Allard - Program 3
+
 ### Questions
 ```
 What happens when you execute the app and type a number with more than 5 digits?
