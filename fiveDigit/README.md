@@ -13,3 +13,4 @@ If n > 0 && n <= 5 it will execute and display the numbers properly.
 
 
 ![fiveDigit](/fiveDigit/splitInt.jpg)
+![fiveDigit](/fiveDigit/splitInt2.jpg)
