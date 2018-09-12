@@ -12,4 +12,4 @@ What happens when you execute the app with fewer than five digits?
 If n > 0 && n <= 5 it will execute and display the numbers properly.
 
 
-![fiveDigit](/fiveDigit/fiveDigit.jpg)
+![fiveDigit](/fiveDigit/splitInt.jpg)
