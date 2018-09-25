@@ -1,0 +1,11 @@
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.csprojAssemblyReference.cache
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.Properties.Resources.resources
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.csproj.GenerateResource.cache
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.csproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\bin\Debug\FindSampleGame.exe.config
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\bin\Debug\FindSampleGame.exe
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\bin\Debug\FindSampleGame.pdb
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.exe
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.pdb
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.GridSizeForm.resources
+C:\Users\brice\source\repos\FindSampleGame\FindSampleGame\obj\Debug\FindSampleGame.GameForm.resources

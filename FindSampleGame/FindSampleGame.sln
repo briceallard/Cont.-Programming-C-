@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSampleGame", "FindSampleGame\FindSampleGame.csproj", "{1F676BA3-EBAD-42CD-9471-C4FD4D1E4644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F676BA3-EBAD-42CD-9471-C4FD4D1E4644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F676BA3-EBAD-42CD-9471-C4FD4D1E4644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F676BA3-EBAD-42CD-9471-C4FD4D1E4644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F676BA3-EBAD-42CD-9471-C4FD4D1E4644}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D4F0564-C66F-41AC-940F-832AAE113178}
+	EndGlobalSection
+EndGlobal
