@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>You are leading the search for a clue that will help you solve a Murder Mystery.
+
+You must locate clues in order to help identify the item used behind a murder. In order to do so, start by selecting a grid size below and click 'Start'.
+
+You will be presented with a grid where you must guess the location of a clue in order to help solve this murder mystery.</value>
+  </data>
 </root>

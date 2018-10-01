@@ -1,11 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//****************************************************************************
+// Program Name: Find The Evidence
+// Files: Clue.cs, Guess.cs, Scanalyzer.cs, GameForm.cs, GridSizeForm.cs
+
+// Author: Brice Allard
+// Email: briceallard@gmail.com
+// Description:
+//	- Using a Windows form and C# design and program a game like application
+//  - where the user must locate a peice of evidence in a matrix of hidden
+//  - locations and output the user interactions via Message Box.
+//****************************************************************************
+
+using System;
 using System.Windows.Forms;
 
 namespace FindSampleGame
@@ -17,6 +22,8 @@ namespace FindSampleGame
             InitializeComponent();
         }
 
+        // Button Click to start the game
+        // Requirements must be met before game window opens
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             // Inline declaration of int gridX and int gridY during int parse for grid size
