@@ -179,7 +179,7 @@
             this.BTN_Edit.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.BTN_Edit.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.BTN_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Edit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Edit.ForeColor = System.Drawing.Color.Black;
             this.BTN_Edit.Image = global::MdiWorkshop.Properties.Resources.edit;
             this.BTN_Edit.ImagePosition = 10;
@@ -198,7 +198,7 @@
             this.BTN_Delete.color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.BTN_Delete.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Delete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
             this.BTN_Delete.Image = global::MdiWorkshop.Properties.Resources.trash;
             this.BTN_Delete.ImagePosition = 10;
@@ -217,7 +217,7 @@
             this.BTN_Insert.color = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.BTN_Insert.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.BTN_Insert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Insert.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Insert.ForeColor = System.Drawing.Color.Black;
             this.BTN_Insert.Image = global::MdiWorkshop.Properties.Resources.add_circle;
             this.BTN_Insert.ImagePosition = 10;
@@ -242,7 +242,7 @@
             this.BTN_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Save.BackgroundImage")));
             this.BTN_Save.ButtonText = "Save && Exit";
             this.BTN_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Save.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.BTN_Save.IdleBorderThickness = 1;
             this.BTN_Save.IdleCornerRadius = 20;
@@ -280,6 +280,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StoreForm";
             this.Text = "Store Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StoreForm_FormClosing);
             this.Load += new System.EventHandler(this.StoreForm_Load);
             this.ResumeLayout(false);
 

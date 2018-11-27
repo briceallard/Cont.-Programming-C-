@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 
@@ -9,6 +10,7 @@ namespace MdiWorkshop
     public partial class StoreForm : Form
     {
         public List<Record> list = new List<Record>();
+        bool hasChanged = false;
 
         public StoreForm()
         {
@@ -31,25 +33,34 @@ namespace MdiWorkshop
 
         private void BTN_Insert_Click(object sender, EventArgs e)
         {
+            hasChanged = true;
+
             ItemForm itemForm = new ItemForm(list);
             itemForm.ShowDialog();
+
             list = itemForm._list;
-            
             AddToListView();
         }
 
         private void AddToListView()
         {
-            Record temp = list[list.Count - 1];
+            Record temp = list.Last();
 
             ListViewItem lvi = new ListViewItem(temp.Sku.ToString());
+            lvi.Name = temp.Sku.ToString();
             lvi.SubItems.Add(temp.Name);
             lvi.SubItems.Add(temp.Category);
             lvi.SubItems.Add(temp.Quantity.ToString());
             lvi.SubItems.Add(temp.Cost.ToString());
             lvi.SubItems.Add(temp.Price.ToString());
 
-            listView.Items.Add(lvi);
+            if (!listView.Items.ContainsKey(temp.Sku.ToString()))
+                listView.Items.Add(lvi);
+            else
+                MessageBox.Show(Utilities.MSG_ENTRY_EXISTS,
+                    Utilities.ERROR_ENTRY_EXISTS,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
         }
 
         private void RefreshListView()
@@ -57,13 +68,20 @@ namespace MdiWorkshop
             foreach (Record item in list)
             {
                 ListViewItem lvi = new ListViewItem(item.Sku.ToString());
+                lvi.Name = item.Sku.ToString();
                 lvi.SubItems.Add(item.Name);
                 lvi.SubItems.Add(item.Category);
                 lvi.SubItems.Add(item.Quantity.ToString());
                 lvi.SubItems.Add(item.Cost.ToString());
                 lvi.SubItems.Add(item.Price.ToString());
 
-                listView.Items.Add(lvi);
+                if (!listView.Items.ContainsKey(item.Sku.ToString()))
+                    listView.Items.Add(lvi);
+                else
+                    MessageBox.Show(Utilities.MSG_ENTRY_EXISTS,
+                        Utilities.ERROR_ENTRY_EXISTS,
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
             }
         }
 
@@ -115,6 +133,20 @@ namespace MdiWorkshop
         {
             Serialize(Tag.ToString());
             Close();
+        }
+
+        private void StoreForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (hasChanged)
+            {
+                if (MessageBox.Show("Would you like to save?", "Save File",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    // Cancel the Closing event from closing the form.
+                    e.Cancel = true;
+                    BTN_Save_Click(sender, e);
+                }
+            }
         }
     }
 }

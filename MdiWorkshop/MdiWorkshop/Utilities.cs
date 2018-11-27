@@ -20,8 +20,14 @@ namespace MdiWorkshop
         static public readonly string ERROR_INVALID_CHARS = "Invalid Characters Found!";
         static public readonly string MSG_INVALID_CHARS = "File name must contain only letters and numbers";
 
+        static public readonly string ERROR_EMPTY_FIELDS = "Empty Fields!";
+        static public readonly string MSG_EMPTY_FIELDS = "Please enter a value in all fields";
+
         static public readonly string ERROR_FILE_EXISTS = "File Exists!";
         static public readonly string MSG_FILE_EXISTS = "A file with this name already exists";
+
+        static public readonly string ERROR_ENTRY_EXISTS = "Entry Exists!";
+        static public readonly string MSG_ENTRY_EXISTS = "Cannot have duplicate SKU values";
 
         static public readonly string ERROR_TITLE = "Error!";
         static public readonly string SUCCESS_TITLE = "Success!";

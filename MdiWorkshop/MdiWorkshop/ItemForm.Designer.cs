@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemForm));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TB_Quantity = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TB_Category = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TB_Price = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TB_Cost = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TB_Name = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.TB_Sku = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TB_Name = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.TB_Cost = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.TB_Price = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.TB_Category = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.BTN_Save = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TB_Quantity = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,55 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Create Item";
+            // 
+            // TB_Quantity
+            // 
+            this.TB_Quantity.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TB_Quantity.Location = new System.Drawing.Point(87, 137);
+            this.TB_Quantity.Name = "TB_Quantity";
+            this.TB_Quantity.Size = new System.Drawing.Size(154, 27);
+            this.TB_Quantity.TabIndex = 4;
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(6, 137);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(75, 27);
+            this.bunifuCustomLabel4.TabIndex = 11;
+            this.bunifuCustomLabel4.Text = "Quantity:";
+            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TB_Category
+            // 
+            this.TB_Category.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TB_Category.Location = new System.Drawing.Point(87, 102);
+            this.TB_Category.Name = "TB_Category";
+            this.TB_Category.Size = new System.Drawing.Size(154, 27);
+            this.TB_Category.TabIndex = 3;
+            // 
+            // TB_Price
+            // 
+            this.TB_Price.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TB_Price.Location = new System.Drawing.Point(87, 207);
+            this.TB_Price.Name = "TB_Price";
+            this.TB_Price.Size = new System.Drawing.Size(154, 27);
+            this.TB_Price.TabIndex = 6;
+            // 
+            // TB_Cost
+            // 
+            this.TB_Cost.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TB_Cost.Location = new System.Drawing.Point(87, 172);
+            this.TB_Cost.Name = "TB_Cost";
+            this.TB_Cost.Size = new System.Drawing.Size(154, 27);
+            this.TB_Cost.TabIndex = 5;
+            // 
+            // TB_Name
+            // 
+            this.TB_Name.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TB_Name.Location = new System.Drawing.Point(87, 67);
+            this.TB_Name.Name = "TB_Name";
+            this.TB_Name.Size = new System.Drawing.Size(154, 27);
+            this.TB_Name.TabIndex = 2;
             // 
             // TB_Sku
             // 
@@ -120,38 +169,6 @@
             this.bunifuCustomLabel2.Text = "Name:";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // TB_Name
-            // 
-            this.TB_Name.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TB_Name.Location = new System.Drawing.Point(87, 67);
-            this.TB_Name.Name = "TB_Name";
-            this.TB_Name.Size = new System.Drawing.Size(154, 27);
-            this.TB_Name.TabIndex = 2;
-            // 
-            // TB_Cost
-            // 
-            this.TB_Cost.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TB_Cost.Location = new System.Drawing.Point(87, 172);
-            this.TB_Cost.Name = "TB_Cost";
-            this.TB_Cost.Size = new System.Drawing.Size(154, 27);
-            this.TB_Cost.TabIndex = 5;
-            // 
-            // TB_Price
-            // 
-            this.TB_Price.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TB_Price.Location = new System.Drawing.Point(87, 207);
-            this.TB_Price.Name = "TB_Price";
-            this.TB_Price.Size = new System.Drawing.Size(154, 27);
-            this.TB_Price.TabIndex = 6;
-            // 
-            // TB_Category
-            // 
-            this.TB_Category.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TB_Category.Location = new System.Drawing.Point(87, 102);
-            this.TB_Category.Name = "TB_Category";
-            this.TB_Category.Size = new System.Drawing.Size(154, 27);
-            this.TB_Category.TabIndex = 3;
-            // 
             // BTN_Save
             // 
             this.BTN_Save.ActiveBorderThickness = 1;
@@ -163,7 +180,7 @@
             this.BTN_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Save.BackgroundImage")));
             this.BTN_Save.ButtonText = "Create Item";
             this.BTN_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Save.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Save.ForeColor = System.Drawing.Color.SeaGreen;
             this.BTN_Save.IdleBorderThickness = 1;
             this.BTN_Save.IdleCornerRadius = 20;
@@ -177,23 +194,6 @@
             this.BTN_Save.TabIndex = 7;
             this.BTN_Save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(6, 137);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(75, 27);
-            this.bunifuCustomLabel4.TabIndex = 11;
-            this.bunifuCustomLabel4.Text = "Quantity:";
-            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TB_Quantity
-            // 
-            this.TB_Quantity.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TB_Quantity.Location = new System.Drawing.Point(87, 137);
-            this.TB_Quantity.Name = "TB_Quantity";
-            this.TB_Quantity.Size = new System.Drawing.Size(154, 27);
-            this.TB_Quantity.TabIndex = 4;
             // 
             // ItemForm
             // 
