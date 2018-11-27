@@ -35,26 +35,27 @@ namespace MdiWorkshop
         {
             hasChanged = true;
 
-            ItemForm itemForm = new ItemForm(list);
+            ItemForm itemForm = new ItemForm();
             itemForm.ShowDialog();
 
-            list = itemForm._list;
-            AddToListView();
+            //list = itemForm._list;
+            if(itemForm.record != null)
+                AddToListView(itemForm.record);
         }
 
-        private void AddToListView()
+        private void AddToListView(Record record)
         {
-            Record temp = list.Last();
+            //Record temp = list.Last();
 
-            ListViewItem lvi = new ListViewItem(temp.Sku.ToString());
-            lvi.Name = temp.Sku.ToString();
-            lvi.SubItems.Add(temp.Name);
-            lvi.SubItems.Add(temp.Category);
-            lvi.SubItems.Add(temp.Quantity.ToString());
-            lvi.SubItems.Add(temp.Cost.ToString());
-            lvi.SubItems.Add(temp.Price.ToString());
+            ListViewItem lvi = new ListViewItem(record.Sku.ToString());
+            lvi.Name = record.Sku.ToString();
+            lvi.SubItems.Add(record.Name);
+            lvi.SubItems.Add(record.Category);
+            lvi.SubItems.Add(record.Quantity.ToString());
+            lvi.SubItems.Add(record.Cost.ToString());
+            lvi.SubItems.Add(record.Price.ToString());
 
-            if (!listView.Items.ContainsKey(temp.Sku.ToString()))
+            if (!listView.Items.ContainsKey(record.Sku.ToString()))
                 listView.Items.Add(lvi);
             else
                 MessageBox.Show(Utilities.MSG_ENTRY_EXISTS,

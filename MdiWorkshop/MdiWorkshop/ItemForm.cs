@@ -6,14 +6,14 @@ namespace MdiWorkshop
 {
     public partial class ItemForm : Form
     {
-        public List<Record> _list = new List<Record>();
-        private bool hasChanged = false;
+        //public List<Record> _list = new List<Record>();
+        public Record record;
 
-        public ItemForm(List<Record> list)
+        public ItemForm()
         {
             InitializeComponent();
             
-            _list = list;
+            //_list = list;
         }
 
         private void BTN_Save_Click(object sender, EventArgs e)
@@ -22,7 +22,7 @@ namespace MdiWorkshop
             {
                 try
                 {
-                    Record record = new Record
+                    record = new Record
                     {
                         Sku = Int32.Parse(TB_Sku.Text),
                         Name = TB_Name.Text,
@@ -32,9 +32,8 @@ namespace MdiWorkshop
                         Price = Double.Parse(TB_Price.Text),
                         storeName = Utilities.STORE_NAME
                     };
-
-                    _list.Add(record);
-                    hasChanged = true;
+                    
+                    //_list.Add(record);
                 }
                 catch (Exception error)
                 {
