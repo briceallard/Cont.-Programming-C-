@@ -1,0 +1,16 @@
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\bin\Debug\MdiWorkshop.exe.config
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\bin\Debug\MdiWorkshop.exe
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\bin\Debug\MdiWorkshop.pdb
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.AboutForm.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.ItemForm.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.NewStore.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.StoreForm.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.VersionForm.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.WorkshopForm.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.Properties.Resources.resources
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.csproj.GenerateResource.cache
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.csproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.csproj.CopyComplete
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.exe
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.pdb
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.csprojAssemblyReference.cache
