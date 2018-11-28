@@ -1,6 +1,6 @@
 ﻿namespace MdiWorkshop
 {
-    partial class ItemForm
+    partial class EditItemForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemForm));
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditItemForm));
+            this.BTN_Update = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TB_Quantity = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -42,19 +42,35 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.BTN_Save = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuCustomLabel1
+            // BTN_Update
             // 
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(6, 32);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(75, 27);
-            this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "SKU:";
-            this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTN_Update.ActiveBorderThickness = 1;
+            this.BTN_Update.ActiveCornerRadius = 20;
+            this.BTN_Update.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.BTN_Update.ActiveForecolor = System.Drawing.Color.White;
+            this.BTN_Update.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.BTN_Update.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_Update.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Update.BackgroundImage")));
+            this.BTN_Update.ButtonText = "Update Item";
+            this.BTN_Update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Update.ForeColor = System.Drawing.Color.SeaGreen;
+            this.BTN_Update.IdleBorderThickness = 1;
+            this.BTN_Update.IdleCornerRadius = 20;
+            this.BTN_Update.IdleFillColor = System.Drawing.Color.White;
+            this.BTN_Update.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.BTN_Update.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.BTN_Update.Location = new System.Drawing.Point(100, 264);
+            this.BTN_Update.Margin = new System.Windows.Forms.Padding(5);
+            this.BTN_Update.Name = "BTN_Update";
+            this.BTN_Update.Size = new System.Drawing.Size(178, 41);
+            this.BTN_Update.TabIndex = 9;
+            this.BTN_Update.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BTN_Update.Click += new System.EventHandler(this.BTN_Edit_ClickEvent);
             // 
             // groupBox1
             // 
@@ -73,9 +89,9 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(266, 251);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Create Item";
+            this.groupBox1.Text = "Update Item";
             // 
             // TB_Quantity
             // 
@@ -170,72 +186,29 @@
             this.bunifuCustomLabel2.Text = "Name:";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // BTN_Save
+            // bunifuCustomLabel1
             // 
-            this.BTN_Save.ActiveBorderThickness = 1;
-            this.BTN_Save.ActiveCornerRadius = 20;
-            this.BTN_Save.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.BTN_Save.ActiveForecolor = System.Drawing.Color.White;
-            this.BTN_Save.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.BTN_Save.BackColor = System.Drawing.SystemColors.Control;
-            this.BTN_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Save.BackgroundImage")));
-            this.BTN_Save.ButtonText = "Create Item";
-            this.BTN_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Save.ForeColor = System.Drawing.Color.SeaGreen;
-            this.BTN_Save.IdleBorderThickness = 1;
-            this.BTN_Save.IdleCornerRadius = 20;
-            this.BTN_Save.IdleFillColor = System.Drawing.Color.White;
-            this.BTN_Save.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.BTN_Save.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.BTN_Save.Location = new System.Drawing.Point(100, 264);
-            this.BTN_Save.Margin = new System.Windows.Forms.Padding(5);
-            this.BTN_Save.Name = "BTN_Save";
-            this.BTN_Save.Size = new System.Drawing.Size(178, 41);
-            this.BTN_Save.TabIndex = 7;
-            this.BTN_Save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(6, 32);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(75, 27);
+            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.Text = "SKU:";
+            this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "X";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(12, 264);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(44, 41);
-            this.bunifuThinButton21.TabIndex = 8;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // ItemForm
+            // EditItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 309);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.BTN_Save);
+            this.ClientSize = new System.Drawing.Size(290, 311);
+            this.Controls.Add(this.BTN_Update);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ItemForm";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "EditItemForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Add New Item";
+            this.Text = "Edit Item";
+            this.Load += new System.EventHandler(this.EditItemForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -244,20 +217,19 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 BTN_Update;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Sku;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Quantity;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Category;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Price;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Cost;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Name;
-        private Bunifu.Framework.UI.BunifuThinButton2 BTN_Save;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Quantity;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TB_Sku;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }

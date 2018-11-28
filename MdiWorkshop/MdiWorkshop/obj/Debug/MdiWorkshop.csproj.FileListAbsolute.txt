@@ -30,3 +30,4 @@ C:\Users\brice\source\repos\Cont.-Programming-C-\MdiWorkshop\MdiWorkshop\obj\Deb
 C:\Users\brice\source\repos\Cont.-Programming-C-\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.csproj.CopyComplete
 C:\Users\brice\source\repos\Cont.-Programming-C-\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.exe
 C:\Users\brice\source\repos\Cont.-Programming-C-\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.pdb
+C:\Users\brice\source\repos\MdiWorkshop\MdiWorkshop\obj\Debug\MdiWorkshop.EditItemForm.resources

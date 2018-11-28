@@ -117,11 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>You are leading the search for a clue that will help you solve a Murder Mystery.
-
-You must locate clues in order to help identify the item used behind a murder. In order to do so, start by selecting a grid size below and click 'Start'.
-
-You will be presented with a grid where you must guess the location of a clue in order to help solve this murder mystery.</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BTN_Update.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALIAAAApCAYAAACRK3PoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ6SURBVHhe7ZzPS1RRGIb7b9q1atWuVa1y00paFCGhCyFc
+        6KIWLVIIE0ywwm1B9MOwDEllkHFIBaVJwmnICc0sZRJugRQSfPGeud4a5urSuefwPPDCwMy9q4fhu+ee
+        9xyLosgI8T2ITIIIIpMggsgkiCAyCSKITILIoSJv71TtcTlnnW+GrHXmpp2e6LLjoxcJOZLIN3l3pTBg
+        D0uTtvH9W6qnyoEiT1Tm3I2uLgzb+Ma8LVRL9mW3agBHhXyTd1ObS9a9OOJ8lNBpvjaILOu75u/a5UK/
+        VX9F8S0Bms+PvV0n9KX8Latsf67ztk5kSXxu6pqNrs3GlwJkj/zWsp3P3bDS1qd0kfVPjMTgAxo5ND83
+        iKyZWOMEgC/cfv/E7iw/+yeyVic0SDMTg0/8/rNnLdPXrbhZromsJ0EN0QC+cb88br1LD2oia51OSxwA
+        vrESrbsFCifymdfdVvn5Nf4KwB80XpwYa6uJfPJFu1ujA/ARvQV0IusDgK8gMgQBIkMQIDIEASJDECAy
+        BAEiQxAgMgRBIrLejOgNCYCPJCJr5xs1JvCVRGRVR7TrHsA3tEdIe4WcyIPvnrpNygC+oUaTmk1OZHWf
+        zk72MCeDd3TMDdrYx9mayEr/20c2tPI8/hog++iYCp25In8TkVV3UpmvuLMa/wwgu6iWpyli/9CWRGRF
+        3Sd1oNhkD1lGEl/I91lubTFxt05kpbBedNWRex9expcBZAdV8vRP/L/ESoPIisYMFfpkvZ4KaVdDM1F7
+        SfOwjm9TvzTtDLhUkfcj67W0cepVp1t0JqQZURVPD3U6UDPNU+VQkQnxJYhMgggikyCCyCSIIDIJIJH9
+        BXA1fK3H+M24AAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

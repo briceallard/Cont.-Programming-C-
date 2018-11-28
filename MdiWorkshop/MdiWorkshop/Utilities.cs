@@ -1,12 +1,22 @@
-﻿using System;
+﻿/**
+ * Brice Allard
+ * Contemporary Programming - C#
+ * Dr. Stringfellow
+ * 11-27-2018
+ * 
+ * Inventory Solution Software designed with MDI in mind. One parent form
+ * and multiple child forms to maintain the inventory of several locations
+ * at once. Menu items are demonstrated as well as sort and serialization
+ * for easy data management and file storage.
+ **/
+
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MdiWorkshop
 {
+    /// <summary>
+    /// Helper file! Helper file! Helper file!
+    /// </summary>
     class Utilities
     {
         static public string STORE_NAME { get; set; }
