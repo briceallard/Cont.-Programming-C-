@@ -16,29 +16,55 @@ using System.Windows.Forms;
 namespace MdiWorkshop
 {
     /// <summary>
-    /// Form to create new item and add it to the list (database perse)
+    /// Automatically receive data and allow change
     /// </summary>
-    public partial class ItemForm : Form
+    public partial class EditItemForm : Form, ICommon
     {
-        public Record record;
+        public Record _record;
+        public Record _sendRecord;
 
-        public ItemForm()
+        public EditItemForm(Record record)
         {
+            _record = record;
             InitializeComponent();
         }
 
         /// <summary>
-        /// Stores data after form validation checks
+        /// Automatically load data into form for visual representation
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void BTN_Save_Click(object sender, EventArgs e)
+        private void EditItemForm_Load(object sender, EventArgs e)
         {
+            TB_Sku.Text = _record.Sku.ToString();
+            TB_Name.Text = _record.Name;
+            TB_Category.Text = _record.Category;
+            TB_Quantity.Text = _record.Quantity.ToString();
+            TB_Cost.Text = _record.Cost.ToString();
+            TB_Price.Text = _record.Price.ToString();
+        }
+
+        /// <summary>
+        /// ICommon functions
+        /// </summary>
+        public void Save() { }
+        public void BTN_Insert_Click(object sender, EventArgs e) { }
+        public void BTN_Delete_Click(object sender, EventArgs e) { }
+        public void BTN_Edit_Click(object sender, EventArgs e) { }
+
+        /// <summary>
+        /// Verify data, save data in global variable for storage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void BTN_Edit_ClickEvent(object sender, EventArgs e)
+        {
+            // Can't be empty!
             if (verifyNoEmptyFields())
             {
                 try
                 {
-                    record = new Record
+                    _sendRecord = new Record
                     {
                         Sku = Int32.Parse(TB_Sku.Text),
                         Name = TB_Name.Text,
@@ -49,7 +75,7 @@ namespace MdiWorkshop
                         storeName = Utilities.STORE_NAME
                     };
                 }
-                catch (Exception error) // Uh oh!
+                catch (Exception error)
                 {
                     MessageBox.Show(error.Message,
                         Utilities.ERROR_TITLE,
@@ -57,7 +83,7 @@ namespace MdiWorkshop
                         MessageBoxIcon.Error);
                 }
             }
-            else
+            else // Was empty!
             {
                 MessageBox.Show(Utilities.MSG_EMPTY_FIELDS,
                         Utilities.ERROR_EMPTY_FIELDS,
@@ -65,6 +91,7 @@ namespace MdiWorkshop
                         MessageBoxIcon.Error);
             }
 
+            // All done!
             Close();
         }
 
@@ -80,12 +107,6 @@ namespace MdiWorkshop
                 TB_Quantity.Text != "" &&
                 TB_Cost.Text != "" &&
                 TB_Price.Text != "") ? true : false;
-        }
-
-        // Close form
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
