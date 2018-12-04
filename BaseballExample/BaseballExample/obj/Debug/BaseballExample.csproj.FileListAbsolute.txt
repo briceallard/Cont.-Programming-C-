@@ -1,0 +1,13 @@
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\obj\Debug\BaseballExample.csprojAssemblyReference.cache
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\obj\Debug\BaseballExample.csproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\Baseball.mdf
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\Baseball_log.ldf
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\BaseballExample.dll.config
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\BaseballExample.pdb
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\EntityFramework.dll
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\EntityFramework.xml
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\obj\Debug\BaseballExample.csproj.CopyComplete
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\obj\Debug\BaseballExample.dll
+C:\Users\brice\source\repos\BaseballExample\BaseballExample\obj\Debug\BaseballExample.pdb
